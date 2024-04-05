@@ -18,10 +18,11 @@ const Header = () => {
       <div className="container">
         <div className="logo">
           <Link to="/">
-            <span className="logo-1">L</span>
-            <span className="logo-2">O</span>
-            <span className="logo-3">G</span>
-            <span className="logo-4">O</span>
+            <img
+              src={`${process.env.PUBLIC_URL}/logo.png`}
+              alt="Logo"
+              style={{ width: '150px', marginTop: '10px' }} // Aplicando estilos inline
+            />
           </Link>
         </div>
         <nav>
