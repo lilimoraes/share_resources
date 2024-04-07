@@ -12,7 +12,7 @@ const Page = () => {
   const api = useApi();
   const { id } = useParams();
 
-  //DECLARAÇÔES USESTATE
+  //USESTATE DECLARATIONS
   const [loading, setLoading] = useState(true);
   const [adInfo, setAdInfo] = useState({});
 
@@ -26,7 +26,7 @@ const Page = () => {
     getAdInfo(id);
   }, [api, id]);
 
-  //FUNÇÔES
+  //FUNCTIONS
   const formatDate = (date) => {
     let cDate = new Date(date);
 
