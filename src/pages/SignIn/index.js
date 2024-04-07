@@ -12,14 +12,14 @@ import {
 const Page = () => {
   const api = useApi();
 
-  //DECLARAÇÔES USESTATE
+  //USESTATE DECLARATIONS
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [rememberPassword, setRememberPassword] = useState(false);
   const [disabled, setDisabled] = useState(false);
   const [error, setError] = useState("");
 
-  //FUNÇÔES
+  //FUNCTIONS
   const handleSubmit = async (e) => {
     e.preventDefault();
     setDisabled(true);
