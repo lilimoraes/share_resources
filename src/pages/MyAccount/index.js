@@ -35,7 +35,7 @@ const Page = () => {
     getStates();
   }, [api])
   
-  //FUNCAO  TRAZER DADOS USUARIO E ANUNCIOS
+  //FUNCTION TO BRING USER DATA AND ADVERTISING
   useEffect(()=> {
     const getToken = async () => {
       const list = await api.getToken();
@@ -45,7 +45,7 @@ const Page = () => {
     getToken()
   }, [api]); 
 
-  //FUNCAO  MUDAR DADOS USUARIO
+  //FUNCTION CHANGE USER DATA
   const handleSubmit = async () => {
       const unRegister = async () => {
         const list = await api.unRegister();
