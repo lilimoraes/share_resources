@@ -10,12 +10,12 @@ import AdItem from "../../components/partials/AdItem";
 const Page = () => {
   const api = useApi();
 
-  //DECLARAÇÔES USESTATE
+  //USESTATE DECLARATIONS
   const [stateList, setStateList] = useState([]);
   const [categories, setCategories] = useState([]);
   const [adList, setAdList] = useState([]);
 
-  //REQUISIÇÂO ESTADOS
+  //REQUEST STATES
   useEffect(() => {
     const getStates = async () => {
       const slist = await api.getStates();
@@ -24,7 +24,7 @@ const Page = () => {
     getStates();
   }, [api]);
 
-  //REQUISICAO CATEGORIAS
+  //REQUEST CATEGORIES
   useEffect(() => {
     const getCategories = async () => {
       const cats = await api.getCategories();
@@ -33,7 +33,7 @@ const Page = () => {
     getCategories();
   }, [api]);
 
-  //REQUISICAO ANUNCIOS RECENTES
+  //REQUEST RECENT ANNOUNCEMENTS
   useEffect(() => {
     const getRecentAds = async () => {
       const json = await api.getAds({
@@ -45,7 +45,7 @@ const Page = () => {
     getRecentAds();
   }, [api]);
 
-  //FUNÇÔES
+  //FUNCTIONS
 
   return (
     <>
