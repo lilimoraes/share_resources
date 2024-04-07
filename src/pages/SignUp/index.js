@@ -12,7 +12,7 @@ import {
 const Page = () => {
   const api = useApi();
 
-  //DECLARAÇÔES USESTATE
+  //USESTATE DECLARATIONS
 
   const [name, setName] = useState("");
   const [stateLoc, setStateLoc] = useState("");
@@ -35,7 +35,7 @@ const Page = () => {
   }, [api]);
 
 
-  //FUNÇÔES
+  //FUNCTIONS
   const handleSubmit = async (e) => {
     e.preventDefault();
     setDisabled(true);
