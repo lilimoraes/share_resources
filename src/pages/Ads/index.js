@@ -115,7 +115,7 @@ const Page = () => {
                         <input
                             type="text"
                             name="q"
-                            placeholder="O que você procura?"
+                            placeholder="What are you looking for?"
                             value={q}
                             onChange={e=>setQ(e.target.value)}
                         />
@@ -128,7 +128,7 @@ const Page = () => {
                             )}
                         </select>
 
-                        <div className="filterName">Categoria:</div>
+                        <div className="filterName">Category:</div>
                         <ul>
                             {categories.map((i,k)=>
                                 <li
@@ -147,10 +147,10 @@ const Page = () => {
                     <h2>Resultados</h2>
                     
                     {loading && adList.length === 0 &&
-                        <div className="listWarning">Carregando...</div>
+                        <div className="listWarning">Loading...</div>
                     }
                     {!loading && adList.length === 0 &&
-                        <div className="listWarning">Não encontramos resultados.</div>
+                        <div className="listWarning">Results not found</div>
                     }
                     <div className="list" style={{opacity:resultOpacity}}>
                         {adList.map((i,k)=>
