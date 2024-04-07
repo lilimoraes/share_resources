@@ -6,9 +6,9 @@ const Page = () => {
   return (
     <PageArea>
       
-      <h1>Pagina Não Encontrada</h1>
+      <h1>Page not found</h1>
 
-      <Link className="back" to="/">Voltar para a Home</Link>
+      <Link className="back" to="/">Back to Home</Link>
     </PageArea>
   );
 };
