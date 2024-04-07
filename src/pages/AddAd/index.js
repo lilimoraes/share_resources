@@ -79,7 +79,7 @@ const Page = () => {
   };
 
   const priceMask = createNumberMask({
-    prefix: "R$ ",
+    prefix: " € ",
     includeThousandsSeparator: true,
     thousandsSeparatorSymbol: ".",
     allowDecimal: true,
